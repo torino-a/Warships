@@ -1,0 +1,54 @@
+{
+  "hood": {
+    "name": "Hood",
+    "ship_class": "Battleship",
+    "nation": "uk",
+    "base_damage": 6000,
+    "speed": 1.5,
+    "attack_distance": 22,
+    "health_points": 45000,
+    "team": 0,
+    "x": 0,
+    "y": 0,
+    "azimuth": 0
+  },
+  "bismarck": {
+    "name": "Bismarck",
+    "ship_class": "Battleship",
+    "nation": "german",
+    "base_damage": 7000,
+    "speed": 1.3,
+    "attack_distance": 20,
+    "health_points": 50000,
+    "team": 0,
+    "x": 0,
+    "y": 0,
+    "azimuth": 0
+  },
+  "belfast": {
+    "name": "Belfast",
+    "ship_class": "Cruiser",
+    "nation": "uk",
+    "base_damage": 3000,
+    "speed": 3,
+    "attack_distance": 14,
+    "health_points": 30000,
+    "team": 0,
+    "x": 0,
+    "y": 0,
+    "azimuth": 0
+  },
+   "hipper": {
+    "name": "Hipper",
+    "ship_class": "Cruiser",
+    "nation": "german",
+    "base_damage": 4000,
+    "speed": 2,
+    "attack_distance": 18,
+    "health_points": 35000,
+    "team": 0,
+    "x": 0,
+    "y": 0,
+    "azimuth": 0
+  }
+}

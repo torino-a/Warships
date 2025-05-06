@@ -9,7 +9,7 @@ def log_round_start(round_number):
 
 
 def log_distance(attacker_name, target_name, distance):
-    print(f"📏 Расстояние между {attacker_name.name} и {target_name}: {distance:.2f}")
+    print(f"📏 Расстояние между {attacker_name} и {target_name}: {distance:.2f}")
 
 
 def log_attack(attacker_name, target_name, damage, remaining_hp):

@@ -28,7 +28,7 @@ for _ in range(ship_count):
     for team_num, fleet in [(1, fleet_team1), (2, fleet_team2)]:
         while True:
             # Пользователь вводит имя корабля (в нижнем регистре для сопоставления с ключами словаря)
-            ship_name = input(f"Введите имя корабля(Hood,Belfast,Hipper,Bismarck) для команды {team_num}: ").lower()
+            ship_name = input(f"Введите имя корабля 🚢 (Hood,Belfast,Hipper,Bismarck) для команды {team_num}: ").lower()
             if ship_name in ships_data:
                 # Создаём копию шаблона корабля, чтобы избежать изменения оригинальных данных
                 ship = copy.deepcopy(ships_data[ship_name])

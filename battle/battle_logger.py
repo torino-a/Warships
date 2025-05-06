@@ -9,10 +9,16 @@ def log_round_start(round_number):
 
 
 def log_distance(attacker_name, target_name, distance):
+    # Применяем title() для корректного вывода имени с заглавной буквы
+    attacker_name = attacker_name.title()  # Преобразуем в формат с заглавной буквы
+    target_name = target_name.title()  # Преобразуем в формат с заглавной буквы
     print(f"📏 Расстояние между {attacker_name} и {target_name}: {distance:.2f}")
 
 
 def log_attack(attacker_name, target_name, damage, remaining_hp):
+    # Применяем title() для корректного вывода имени с заглавной буквы
+    attacker_name = attacker_name.title()
+    target_name = target_name.title()
     print(f"💥 {attacker_name} атакует {target_name} и наносит {damage} урона. Осталось HP: {max(0, remaining_hp)}")
 
 
@@ -21,7 +27,7 @@ def log_ship_sunk(ship_name):
 
 
 def log_no_attacks():
-    print("❌ Бой завершён: ни один корабль не смог атаковать.")
+    print("🤝 Ничья! Бой завершён: ни один корабль не смог атаковать.")
 
 
 def log_battle_result(team1_alive, team2_alive):

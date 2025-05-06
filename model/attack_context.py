@@ -22,6 +22,7 @@ class AttackContext:
 
         return max(0, round(base_damage))
 
+
     def apply_class_modifiers(self, damage: float, distance: float) -> float:
         if self.attacker.ship_class == "Cruiser" and distance <= 5:
             damage *= 4  # Увеличение на близкой дистанции
@@ -32,9 +33,9 @@ class AttackContext:
     def apply_nation_modifiers(self, damage: float, distance: float) -> float:
         nation = self.target.nation.strip()
 
-        if nation == "British" and distance > 8:
+        if nation == "uk" and distance > 8:
             damage *= 0.5  # уменьшение урона на 50%
-        elif nation == "German":
+        elif nation == "german":
             damage *= 0.8  # уменьшение урона на 20%
 
         return damage

@@ -15,6 +15,7 @@ class Ship:
 
     @staticmethod
     def from_dict(data: dict) -> "Ship":
+        """Этот метод создаёт экземпляр класса Ship из словаря данных."""
         from model.position import Position
         position = Position(data["x"], data["y"], data["azimuth"])
         return Ship(
